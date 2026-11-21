@@ -45,7 +45,7 @@ export function SectionHeading({ eyebrow, title, text, align = 'start', dark = f
   return (
     <div className={`${center ? 'mx-auto text-center' : ''} max-w-2xl ${dark ? 'on-dark' : ''} ${className}`} data-reveal>
       {eyebrow && <p className={`eyebrow ${center ? 'justify-center' : ''}`}>{eyebrow}</p>}
-      <h2 className={`mt-4 font-display text-[2.1rem] leading-[1.35] font-bold sm:text-5xl sm:leading-[1.3] ${dark ? 'text-ivory-100' : 'text-navy-900'}`}>
+      <h2 className={`mt-4 font-display text-[2.1rem] leading-[1.45] font-bold sm:text-5xl sm:leading-[1.4] ${dark ? 'text-ivory-100' : 'text-navy-900'}`}>
         {title}
       </h2>
       {text && <p className={`mt-5 text-[1.05rem] leading-[1.95] ${dark ? 'text-ivory-100/70' : 'text-ink-500'}`}>{text}</p>}

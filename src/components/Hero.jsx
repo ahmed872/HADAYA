@@ -54,11 +54,11 @@ export default function Hero() {
             </p>
           )}
 
-          <h1 id="hero-title" className="mt-6 font-display text-[2.75rem] leading-[1.25] font-bold sm:text-6xl sm:leading-[1.22] lg:text-[4.1rem] xl:text-[4.6rem]">
+          <h1 id="hero-title" className="mt-6 font-display text-[2.75rem] leading-[1.4] font-bold sm:text-6xl sm:leading-[1.36] lg:text-[4.1rem] xl:text-[4.6rem]">
             <span className="block animate-fade-up" style={{ animationDelay: '300ms' }}>
               نصنع لحظات التقدير...
             </span>
-            <span className="block animate-fade-up bg-linear-to-l from-gold-300 via-gold-400 to-gold-600 bg-clip-text pb-2 text-transparent" style={{ animationDelay: '480ms' }}>
+            <span className="text-gradient-gold block animate-fade-up bg-linear-to-l from-gold-300 via-gold-400 to-gold-600 bg-clip-text pb-2 text-transparent" style={{ animationDelay: '480ms' }}>
               ونخلّد الإنجازات
             </span>
           </h1>

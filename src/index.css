@@ -66,9 +66,17 @@
   p {
     text-wrap: pretty;
   }
+  /* subtle selection: keeps the text's own color so tall Amiri glyphs and
+     gradient-clipped text stay readable when highlighted */
   ::selection {
-    background: var(--color-gold-500);
-    color: var(--color-navy-900);
+    background: rgb(197 161 90 / 0.28);
+  }
+  .on-dark ::selection {
+    background: rgb(197 161 90 / 0.35);
+    color: var(--color-ivory-50);
+  }
+  .text-gradient-gold::selection {
+    -webkit-text-fill-color: var(--color-gold-300);
   }
   :focus-visible {
     outline: 2px solid var(--color-gold-500);

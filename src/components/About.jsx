@@ -22,7 +22,7 @@ export default function About() {
         <div className="lg:col-span-7">
           <div data-reveal>
             <p className="eyebrow">من نحن</p>
-            <h2 id="about-title" className="mt-4 font-display text-[2.1rem] leading-[1.35] font-bold sm:text-5xl sm:leading-[1.3]">
+            <h2 id="about-title" className="mt-4 font-display text-[2.1rem] leading-[1.45] font-bold sm:text-5xl sm:leading-[1.4]">
               نهتم بأن تبقى لحظة التكريم ذكرى تليق بأصحابها
             </h2>
             <p className="mt-6 max-w-2xl text-[1.05rem] leading-[2] text-ivory-100/70">
