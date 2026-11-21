@@ -59,7 +59,6 @@ export default function App() {
         }`}
         style={{ left: 'max(1.25rem, env(safe-area-inset-left))', bottom: 'max(1.25rem, env(safe-area-inset-bottom))' }}
       >
-        <span className="absolute inset-0 animate-ping rounded-full bg-[#1f9d55]/40 [animation-duration:2.6s]" aria-hidden="true" />
         <WhatsAppIcon className="relative h-7 w-7" />
       </a>
 

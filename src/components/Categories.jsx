@@ -12,7 +12,7 @@ const layout = [
   'lg:col-span-7 aspect-[4/5] md:aspect-auto md:min-h-[17rem]',
   'col-span-2 md:col-span-6 lg:col-span-5 aspect-[16/10] md:aspect-auto md:min-h-[17rem]',
 ]
-const objectPos = ['50% 55%', '50% 45%', '50% 55%', '50% 40%', '50% 50%', '50% 50%']
+const objectPos = ['50% 55%', '50% 35%', '50% 55%', '50% 40%', '50% 40%', '50% 45%']
 
 export default function Categories({ onSelect }) {
   return (
