@@ -11,7 +11,7 @@ export default function Hero() {
     <section id="home" className="on-dark relative isolate flex min-h-[100svh] flex-col overflow-hidden bg-navy-900 text-ivory-100" aria-labelledby="hero-title">
       {/* background composition */}
       <picture className="absolute inset-0 -z-20 block">
-        {d && <source media="(min-width: 768px)" srcSet={srcSet('hero')} sizes="100vw" width={d.w} height={d.h} />}
+        {d && <source media="(min-width: 1024px)" srcSet={srcSet('hero')} sizes="100vw" width={d.w} height={d.h} />}
         <img
           src={imgUrl('hero_m', 800)}
           srcSet={srcSet('hero_m')}
@@ -21,16 +21,16 @@ export default function Hero() {
           alt="تشكيلة من دروع التكريم الخشبية وجوائز الكريستال والكؤوس الذهبية"
           fetchPriority="high"
           decoding="sync"
-          className="h-[68%] w-full animate-hero-zoom object-cover object-[50%_35%] md:h-full md:object-[22%_50%]"
+          className="h-[68%] w-full animate-hero-zoom object-cover object-[50%_35%] md:h-[72%] lg:h-full lg:object-[0%_50%]"
         />
       </picture>
       {/* overlays: legibility on the text side (right in RTL) */}
-      <div className="absolute inset-0 -z-10 bg-linear-to-t from-navy-900 from-35% via-navy-900/40 via-60% to-navy-900/10 md:bg-linear-to-l md:from-navy-900 md:from-25% md:via-navy-900/75 md:via-50% md:to-transparent md:to-80%" />
+      <div className="absolute inset-0 -z-10 bg-linear-to-t from-navy-900 from-35% via-navy-900/40 via-60% to-navy-900/10 lg:bg-linear-to-l lg:from-navy-900 lg:from-30% lg:via-navy-900/80 lg:via-50% lg:to-transparent lg:to-75%" />
       <div className="absolute inset-x-0 top-0 -z-10 h-40 bg-linear-to-b from-navy-950/80 to-transparent" />
-      <div className="pattern-star absolute inset-y-0 right-0 -z-10 hidden w-[38%] opacity-[0.035] md:block" />
+      <div className="pattern-star absolute inset-y-0 right-0 -z-10 hidden w-[38%] opacity-[0.035] lg:block" />
 
-      <div className="container-x relative flex flex-1 flex-col justify-end pt-28 pb-10 md:justify-center md:pt-32 md:pb-24">
-        <div className="max-w-[40rem] lg:max-w-[44rem]">
+      <div className="container-x relative flex flex-1 flex-col justify-end pt-28 pb-10 md:pb-16 lg:justify-center lg:pt-32 lg:pb-24">
+        <div className="max-w-[40rem] lg:max-w-[38rem] xl:max-w-[42rem]">
           {contact.rating ? (
             <a
               href={contact.map.directionsUrl}
@@ -54,7 +54,7 @@ export default function Hero() {
             </p>
           )}
 
-          <h1 id="hero-title" className="mt-6 font-display text-[2.75rem] leading-[1.25] font-bold sm:text-6xl sm:leading-[1.22] lg:text-[4.6rem] xl:text-[5.1rem]">
+          <h1 id="hero-title" className="mt-6 font-display text-[2.75rem] leading-[1.25] font-bold sm:text-6xl sm:leading-[1.22] lg:text-[4.1rem] xl:text-[4.6rem]">
             <span className="block animate-fade-up" style={{ animationDelay: '300ms' }}>
               نصنع لحظات التقدير...
             </span>
@@ -89,7 +89,7 @@ export default function Hero() {
       </div>
 
       {/* scroll cue + vertical latin mark */}
-      <a href="#categories" aria-label="انتقل إلى الأقسام" className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-3 text-ivory-100/50 transition-colors hover:text-gold-300 md:flex">
+      <a href="#categories" aria-label="انتقل إلى الأقسام" className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-3 text-ivory-100/50 transition-colors hover:text-gold-300 lg:flex">
         <span className="font-latin text-[0.7rem] tracking-[0.35em]">SCROLL</span>
         <span className="relative block h-12 w-px overflow-hidden bg-ivory-100/15">
           <span className="absolute inset-x-0 top-0 h-1/2 animate-[scrollcue_2.2s_var(--ease-luxe)_infinite] bg-gold-400" />
